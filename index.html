@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaurangaa Radio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="radio-shell">
+  <header class="topbar">
+    <div class="brand">
+      <div class="radio-icon">◉</div>
+      <div>
+        <h1>Gaurangaa Radio</h1>
+        <p>LOCAL • MUSIC • RADIO</p>
+      </div>
+    </div>
+    <button id="folderBtn" class="outline-btn">Select Radio Folder</button>
+  </header>
+
+  <section class="player-card">
+    <div class="live-pill"><span></span> ON AIR</div>
+    <div class="now-label">NOW PLAYING</div>
+    <h2 id="nowPlaying">Select your radio folder</h2>
+    <p id="status">Your local radio station is ready.</p>
+
+    <div class="progress-area">
+      <span id="currentTime">0:00</span>
+      <input id="progress" type="range" min="0" max="100" value="0">
+      <span id="duration">0:00</span>
+    </div>
+
+    <div class="controls">
+    <button id="playBtn" class="control primary" aria-label="Play" type="button">▷</button>
+    <button id="nextBtn" class="control" aria-label="Next song" type="button">»</button>
+  </div>
+
+    <audio id="audio" preload="metadata"></audio>
+  </section>
+
+  <section class="songs-section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">STATION LIBRARY</p>
+        <h3>Song List</h3>
+      </div>
+      <div id="songCount" class="count">0 songs</div>
+    </div>
+
+    <div id="list" class="song-list">
+      <div class="empty">Select the radio folder to load your MP3 collection.</div>
+    </div>
+  </section>
+
+  <footer>
+    <span>GAURANGAA RADIO</span>
+    <span>LOCAL PLAYER</span>
+  </footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
